@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Birthday Wish</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>Birthday-wish</title>
   <!-- Font Awesome 4.7 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
@@ -20,7 +18,7 @@
 
     body {
       background: url('WhatsApp Image 2025-11-28 at 4.21.26 PM.jpeg');
-      background-size: cover;
+      background-size: 250px auto;
       font-family: 'Playfair Display', serif;
     }
 
@@ -30,42 +28,41 @@
     }
 
     .main {
+      height: 650px;
       border: 3px solid navy;
       background: url('63649831-happy-birthday-lettering-and-doodle-seamless-pattern-vector-illustration-on-white-background-funny.jpg');
-      background-size: cover;
-      padding: 20px;
+      background-size: 400px auto;
     }
 
     .devo {
+      height: 460px;
       border: 3px solid navy;
       background: url('8jqq_vqxg_230323.jpg');
-      background-size: cover;
+      background-size: 400px auto;
       position: relative;
-      padding: 20px;
     }
 
     .dev {
-      line-height: 1.4;
+      line-height: 70px;
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      text-align: center;
     }
 
     /* Audio button positioning */
     .sticky-btn {
-      position: absolute;
+      position: absolute;        /* start centered */
       left: 75%;
-      top: 600px;
+      top: 600px;                /* adjust vertical position */
       transform: translateX(-50%);
-      transition: all 1s ease;
+      transition: all 1s ease; /* smooth transition */
       z-index: 1000;
     }
 
     .sticky-btn.fixed {
-      position: fixed;
-      top: 10px;
+      position: fixed;           /* stick to viewport */
+      top: 1px;                 /* top-right corner */
       right: 20px;
       left: auto;
       transform: none;
@@ -73,11 +70,17 @@
 
     /* Glowing button styles */
     .btn {
+      position: absolute;
+      left: 50%;
+      top: 52%;
+      transform: translate(-50%, -50%);
       background-color: transparent;
       color: #fff;
       font-size: 85px;
       border: none;
       border-radius: 50%;
+      display: block;
+      margin: 0 auto;
       opacity: .3;
       transition: all linear .2s;
       cursor: pointer;
@@ -124,63 +127,18 @@
       50%      { box-shadow: 0 0 40px yellow, 0 0 80px violet; }
       75%      { box-shadow: 0 0 40px cyan, 0 0 80px pink; }
     }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-      .main, .devo {
-        padding: 10px;
-      }
-
-      table {
-        width: 100%;
-        display: block;
-      }
-
-      table img {
-        width: 100%;
-        height: auto;
-      }
-
-      th, td {
-        display: block;
-        width: 100%;
-        text-align: center;
-      }
-
-      h1 {
-        font-size: 6vw;
-        line-height: 1.4;
-      }
-
-      .sticky-btn {
-        left: 50%;
-        top: auto;
-        bottom: 20px;
-        transform: translateX(-50%);
-      }
-
-      .btn {
-        font-size: 12vw;
-      }
-
-      .abc {
-        width: 60px;
-        height: 60px;
-        font-size: 12vw;
-      }
-    }
   </style>
 </head>
 <body>
   <div class="bc">
-    <marquee scrollamount="15" height="80" bgcolor="black"> 
-      <span style="font-size: 8vw; color: navy; font-weight: bold;">BLACK CUTIE 🥰💙</span>
+    <marquee scrollamount="15px" height=80 bgcolor="black"> 
+      <font size="200px" color="navy"><b>BLACK &nbsp CUTIE</b> 🥰💙</font> 
     </marquee>
   </div>
 
   <!-- Audio Button -->
   <div class="sticky-btn">
-    <audio id="mymusic" src="Devon-song.mp3" loop></audio>
+    <audio id="mymusic" src="Devon-song.mp3" loop=""></audio>
     <div class="abc">
       <button class="btn">
         <i class="fa fa-play-circle-o"></i>
@@ -192,43 +150,55 @@
   <!-- Birthday Content -->
   <center>
     <div class="main">
-      <table style="width:65%;background-color:green;">
-        <tr>
-          <td><img src="Vidthiyashalini.jpg" alt="VS"></td>
-          <th>
-            <p style="font-size: 5vw;">💕 Wishing you a birthday as beautiful as your soul and as bright as your smile, </p>
-            <p style="font-size: 8vw; color:maroon;">My Dear<br> Bestie <br> 💞</p>
-          </th>
-        </tr>
-      </table>
+      <center>
+        <table bordercolor="deepskyblue" style="width:65%;background-color:green;">
+          <tr>
+            <td><img src="Vidthiyashalini.jpg" height=600 width=300 alt="VS"></td>
+            <th>
+              <center>
+                <font size="70px">💕 Wishing you a birthday as beautiful as your soul and as bright as your smile, </font>
+                <p style="font-size: 100px; color:maroon;">My Dear<br> Bestie <br> 💞</p>
+              </center>
+            </th>
+          </tr>
+        </table>
+      </center>
     </div><br><br><br>
-    <h1>
-      On this bright and joyful day,<br>
-      May happiness light your way.<br>
-      Laughter, love, and dreams come true,<br>
-      This birthday shines because of you.<br>
-      And my wish, from heart so deep,<br>
-      Is the best you’ll ever keep.
-    </h1><br><br><br>
-    <p style="font-size: 4vw; max-width: 90%; margin: auto;">
+    <center>
+      <h1 style="font-size:50px;">
+        On this bright and joyful day,<br>
+        May happiness light your way.<br>
+        Laughter, love, and dreams come true,<br>
+        This birthday shines because of you.<br>
+        And my wish, from heart so deep,<br>
+        Is the best you’ll ever keep.
+      </h1>
+    </center><br><br><br><br><br><br><br>
+    <font size=24>
       I truly hope this birthday brings you endless happiness, joy and love. 
       May you feel how special today is, and may it be filled with unforgettable moments. 
       My wish for you comes straight from the heart. 
       I wish that my message reaches you as the warmest and most heartfelt wish you’ve ever received.
-    </p>
+    </font>
     <div class="devo">
       <div class="dev">
-        <p style="font-size:5vw; color:#8e0039;">
-          <b>ALL THE BEST VIDTHIYASHALINI<br>
-          for your A/L studies (BIO)<br>
-          & higher studies to become a...<br>
-          (DOCTOR)</b>
-        </p>
+        <center>
+          <b>
+            <p style="font-size:63px; color:#8e0039;">
+              <font face="magneto">ALL THE BEST </font>
+              <font face="castellar">VIDTHIYASHALINI</font><br>
+              <font face="lucida calligraphy"> for your A/L studies</font> 
+              <font face="blackadder itc">(BIO) & </font>
+              <font face="lucida calligraphy">higher studies to become a...</font> 
+              <font face="blackadder itc">(DOCTOR)</font>
+            </p>
+          </b>
+        </center>
       </div>
     </div>
   </center>
 
-  <!-- JavaScript -->
+  <!-- Plain JavaScript -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       const playIcon = document.querySelector(".fa-play-circle-o");
@@ -236,18 +206,21 @@
       const audio = document.getElementById("mymusic");
       const stickyBtn = document.querySelector(".sticky-btn");
 
+      // Play button logic
       playIcon.addEventListener("click", function() {
         playIcon.style.display = "none";
         pauseIcon.style.display = "inline-block";
         audio.play();
       });
 
+      // Pause button logic
       pauseIcon.addEventListener("click", function() {
         pauseIcon.style.display = "none";
         playIcon.style.display = "inline-block";
         audio.pause();
       });
 
+      // Scroll logic for sticky button
       window.addEventListener("scroll", function() {
         const scrollPos = window.scrollY;
         if (scrollPos > 200) {
@@ -257,10 +230,12 @@
         }
       });
     });
+	
 
+    // Authentication check
     if (sessionStorage.getItem("authenticated") !== "true") {
       alert("You must enter the password first!");
-      window.location.href = "lock.html";
+      window.location.href = "index.html";
     }
     // Clear session when leaving
     window.addEventListener("beforeunload", () => {
